@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  background-color: #fbeaeb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.up {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.right {
+  width: 100%;
+  height: 50px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.about:hover {
+  background-color: #2f3c7e;
+  transform: scale(1.3);
+}
+.about {
+  padding: 20px 70px 20px 70px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.secdiv {
+  display: flex;
+  width: 100%;
+  height: 550px;
+}
+.leftabt {
+  width: 40%;
+  height: 550px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rightabt {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.rightabt img {
+  width: 500px;
+  object-fit: contain;
+}
+
+#skill {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.skill-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.skill-item div {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.skill-item:hover {
+  background-color: #2f3c7e;
+  transform: scale(1.1);
+}
+
+.project {
+  width: 90%;
+  height: 340px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-inline: 50px;
+}
+.projectsub img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+.projectsub:hover {
+  background-color: #2f3c7e;
+  transform: scale(1.1);
+  height: 400px;
+  width: 400px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2f3c7e;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+}
+.project:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contact {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 250px;
+}
+.contactsub {
+  font-size: 25px;
+  align-items: center;
+  border: 3.5px solid #2f3c7e;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.contactsub:hover {
+  transform: scale(1.1);
+}
